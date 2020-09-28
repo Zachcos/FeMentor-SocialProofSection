@@ -170,6 +170,7 @@ body {
 .bars {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 .bars .bar {
   background-color: #f7f2f7;
@@ -190,6 +191,59 @@ body {
   color: #502050;
   font-size: 0.85rem;
   text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+.cards .card {
+  background: #502050;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 90%;
+}
+.cards .card:last-child {
+  margin-bottom: 100px;
+}
+.cards .card--user {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  width: 85%;
+}
+.cards .card--user--avatar {
+  display: inline;
+  margin-right: 30px;
+}
+.cards .card--user--avatar img {
+  border-radius: 50%;
+  max-width: 45px;
+}
+.cards .card--user--info {
+  font-size: 0.9rem;
+}
+.cards .card--user--info__name {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  color: white;
+  margin: 7px 0 5px;
+}
+.cards .card--user--info__subtitle {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  color: #ee68a4;
+  opacity: 0.75;
+}
+.cards .card--copy {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  color: white;
+  width: 85%;
+  font-size: 0.85rem;
+  margin: 0 auto 30px;
+  line-height: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

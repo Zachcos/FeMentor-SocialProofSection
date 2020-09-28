@@ -52,6 +52,7 @@ body {
 .bars {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
   .bar {
     background-color: $lightGrayMagenta;
     border-radius: 10px;
@@ -69,6 +70,56 @@ body {
       color: $veryDarkMagenta;
       font-size: 0.85rem;
       text-align: center;
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  .card {
+    background: $veryDarkMagenta;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 90%;
+    &:last-child {
+      margin-bottom: 100px;
+    }
+    &--user {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 30px auto;
+      width: 85%;
+      &--avatar {
+        display: inline;
+        margin-right: 30px;
+        img {
+          border-radius: 50%;
+          max-width: 45px;
+        }
+      }
+      &--info {
+        font-size: 0.9rem;
+        &__name {
+          @include font__bold;
+          color: $white;
+          margin: 7px 0 5px;
+        }
+        &__subtitle {
+          @include font__light;
+          color: $softPink;
+          opacity: 0.75;
+        }
+      }
+    }
+    &--copy {
+      @include font__med;
+      color: $white;
+      width: 85%;
+      font-size: 0.85rem;
+      margin: 0 auto 30px;
+      line-height: 1.5rem;
     }
   }
 }
