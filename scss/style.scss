@@ -48,3 +48,27 @@ body {
     line-height: 1.35rem;
   }
 }
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  .bar {
+    background-color: $lightGrayMagenta;
+    border-radius: 10px;
+    height: 80px;
+    margin: 10px auto;
+    width: 90%;
+    &--stars {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px auto 20px;
+      width: 40%;
+    }
+    &--title {
+      @include font__bold;
+      color: $veryDarkMagenta;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  }
+}

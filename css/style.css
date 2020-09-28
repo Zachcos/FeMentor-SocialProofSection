@@ -167,4 +167,29 @@ body {
   line-height: 1.35rem;
 }
 
+.bars {
+  display: flex;
+  flex-direction: column;
+}
+.bars .bar {
+  background-color: #f7f2f7;
+  border-radius: 10px;
+  height: 80px;
+  margin: 10px auto;
+  width: 90%;
+}
+.bars .bar--stars {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px auto 20px;
+  width: 40%;
+}
+.bars .bar--title {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  color: #502050;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
