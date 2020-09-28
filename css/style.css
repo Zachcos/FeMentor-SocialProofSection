@@ -230,6 +230,7 @@ body {
   font-weight: 700;
   color: white;
   margin: 7px 0 5px;
+  opacity: 0.85;
 }
 .cards .card--user--info__subtitle {
   font-family: "Spartan", sans-serif;
@@ -241,10 +242,11 @@ body {
   font-family: "Spartan", sans-serif;
   font-weight: 500;
   color: white;
-  width: 85%;
-  font-size: 0.85rem;
-  margin: 0 auto 30px;
+  font-size: 0.8rem;
   line-height: 1.5rem;
+  margin: 0 auto 30px;
+  opacity: 0.8;
+  width: 85%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -252,29 +254,82 @@ body {
     background: url("/images/bg-pattern-top-desktop.svg") top left no-repeat, url("/images/bg-pattern-bottom-desktop.svg") bottom left no-repeat;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
+    width: 78%;
   }
 
   .copy {
+    margin: 130px 0 0 0;
     text-align: left;
-    width: 40%;
-    margin: 130px 12%;
+    width: 42%;
   }
   .copy--title {
     font-size: 2.9rem;
     margin: 0;
+    width: 100%;
   }
   .copy--body {
-    font-family: "Spartan", sans-serif;
-    font-weight: 500;
-    margin: 15px 0 0 0;
-    width: 80%;
-    font-size: 0.9rem;
     line-height: 1.5rem;
+    margin: 15px 0 0;
+    width: 85%;
+  }
+
+  .bars {
+    margin: 140px auto 0 auto;
+    width: 42%;
+  }
+  .bars .bar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    margin: 8px 0;
+    padding: 0 10px;
+    width: 100%;
+  }
+  .bars .bar--stars {
+    height: 30%;
+    margin: 0 30px;
+  }
+  .bars .bar--title {
+    text-align: left;
+  }
+  .bars .bar:nth-child(2) {
+    margin-left: 45px;
+  }
+  .bars .bar:nth-child(3) {
+    margin-left: 90px;
   }
 
   .cards {
-    width: 100%;
+    flex-direction: row;
     flex-basis: 100%;
+    height: 100%;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .cards .card {
+    height: 80%;
+    padding: 10px 0;
+    width: 31%;
+  }
+  .cards .card:last-child {
+    margin-bottom: 0;
+  }
+  .cards .card--user {
+    margin: 30px auto 20px;
+  }
+  .cards .card--user--avatar img {
+    max-width: 38px;
+  }
+  .cards .card--user--info {
+    font-size: 0.8rem;
+  }
+  .cards .card:nth-child(2) {
+    margin-top: 25px;
+  }
+  .cards .card:nth-child(3) {
+    margin-top: 50px;
   }
 }
 
