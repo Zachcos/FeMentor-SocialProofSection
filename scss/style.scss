@@ -42,7 +42,7 @@ body {
   &--body {
     @include font__med;
     color: $darkGrayMagenta;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     width: 90%;
     font-size: 0.9rem;
     line-height: 1.35rem;
