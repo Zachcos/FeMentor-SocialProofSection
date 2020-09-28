@@ -137,5 +137,11 @@ table {
 
 /* Start variables and mixins */
 /* End variables and mixins */
+body {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  background: url("/images/bg-pattern-top-mobile.svg") top left no-repeat, url("/images/bg-pattern-bottom-mobile.svg") bottom left no-repeat;
+}
 
 /*# sourceMappingURL=style.css.map */

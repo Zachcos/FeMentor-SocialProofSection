@@ -19,3 +19,11 @@ $white: hsl(0, 0%, 100%);
   font-weight: 700;
 }
 /* End variables and mixins */
+
+body {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  background: url("/images/bg-pattern-top-mobile.svg") top left no-repeat,
+    url("/images/bg-pattern-bottom-mobile.svg") bottom left no-repeat;
+}
